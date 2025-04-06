@@ -1,0 +1,54 @@
+{
+  "$class": "org.example.Model",
+  "declarations": [
+    {
+      "type": "scalar",
+      "name": "my_scalar"
+    },
+    {
+      "type": "scalar",
+      "name": "myScalar"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "ExampleConcept",
+      "extends": "BaseConcept",
+      "properties": [
+        {
+          "name": "propertyOne",
+          "type": "string",
+          "validators": {
+            "length": { "min": 1, "max": 100 }
+          },
+          "decorators": ["@Term"]
+        },
+        {
+          "name": "NonCamel_Property",
+          "type": "string",
+          "validators": {
+            "length": { "min": 1, "max": 100 }
+          },
+          "decorators": ["@Term"]
+        }
+      ],
+      "decorators": ["@Term"]
+    },
+    {
+      "name": "DuplicateConcept",
+      "extends": "BaseConcept",
+      "properties": [],
+      "decorators": ["@Term"]
+    }
+  ],
+  "namespaces": [
+    {
+      "name": "org.example",
+      "concepts": [
+        { "name": "ExampleConcept" },
+        { "name": "DuplicateConcept" },
+        { "name": "DuplicateConcept" }
+      ]
+    }
+  ]
+}

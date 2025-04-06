@@ -1,0 +1,17 @@
+{
+  "name": "concerto-linter",
+  "version": "1.0.0",
+  "description": "A linter for Concerto source files using Spectral to enforce DSL syntax and AST rules",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@stoplight/spectral-core": "^1.19.5",
+    "@stoplight/spectral-functions": "^1.9.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  }
+}

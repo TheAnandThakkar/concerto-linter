@@ -1,0 +1,14 @@
+{
+    "enabledRules": {
+      "scalarDeclarationNameCamelCase": true,
+      "propertyNameCamelCase": true,
+      "disallowMaps": true,
+      "stringPropertiesLengthValidator": true,
+      "declarationTermDecorator": true,
+      "propertyTermDecorator": true,
+      "conceptsExtendBase": true,
+      "uniqueConceptNames": true
+    },
+    "baseConcept": "BaseConcept"
+  }
+  
